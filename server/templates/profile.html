@@ -1,367 +1,483 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"bc12d0ca7c","applicationID":"1887052,5587075","transactionName":"IlgMRUFXWFhWEE5CQwBDF0IcS0BVRxcSHl4PUwdJ","queueTime":0,"applicationTime":63,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
-<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {});
+    NREUM.info = {
+        "beacon": "bam.nr-data.net",
+        "errorBeacon": "bam.nr-data.net",
+        "licenseKey": "bc12d0ca7c",
+        "applicationID": "1887052,5587075",
+        "transactionName": "IlgMRUFXWFhWEE5CQwBDF0IcS0BVRxcSHl4PUwdJ",
+        "queueTime": 0,
+        "applicationTime": 63,
+        "ttGuid": "",
+        "agentToken": null,
+        "agent": "js-agent.newrelic.com/nr-632.min.js"
+    }
+    </script>
+    <script type="text/javascript">
+    window.NREUM || (NREUM = {}), __nr_require = function(e, n, t) {
+        function r(t) {
+            if (!n[t]) {
+                var o = n[t] = {
+                    exports: {}
+                };
+                e[t][0].call(o.exports, function(n) {
+                    var o = e[t][1][n];
+                    return r(o ? o : n)
+                }, o, o.exports)
+            }
+            return n[t].exports
+        }
+        if ("function" == typeof __nr_require) return __nr_require;
+        for (var o = 0; o < t.length; o++) r(t[o]);
+        return r
+    }({
+        QJf3ax: [function(e, n) {
+            function t(e) {
+                function n(n, t, a) {
+                    e && e(n, t, a), a || (a = {});
+                    for (var u = c(n), f = u.length, s = i(a, o, r), p = 0; f > p; p++) u[p].apply(s, t);
+                    return s
+                }
+
+                function a(e, n) {
+                    f[e] = c(e).concat(n)
+                }
+
+                function c(e) {
+                    return f[e] || []
+                }
+
+                function u() {
+                    return t(n)
+                }
+                var f = {};
+                return {
+                    on: a,
+                    emit: n,
+                    create: u,
+                    listeners: c,
+                    _events: f
+                }
+            }
+
+            function r() {
+                return {}
+            }
+            var o = "nr@context",
+                i = e("gos");
+            n.exports = t()
+        }, {
+            gos: "7eSDFh"
+        }],
+        ee: [function(e, n) {
+            n.exports = e("QJf3ax")
+        }, {}],
+        3: [function(e, n) {
+            function t(e) {
+                return function() {
+                    r(e, [(new Date).getTime()].concat(i(arguments)))
+                }
+            }
+            var r = e("handle"),
+                o = e(1),
+                i = e(2);
+            "undefined" == typeof window.newrelic && (newrelic = window.NREUM);
+            var a = ["setPageViewName", "addPageAction", "setCustomAttribute", "finished", "addToTrace", "inlineHit", "noticeError"];
+            o(a, function(e, n) {
+                window.NREUM[n] = t("api-" + n)
+            }), n.exports = window.NREUM
+        }, {
+            1: 12,
+            2: 13,
+            handle: "D5DuLP"
+        }],
+        "7eSDFh": [function(e, n) {
+            function t(e, n, t) {
+                if (r.call(e, n)) return e[n];
+                var o = t();
+                if (Object.defineProperty && Object.keys) try {
+                    return Object.defineProperty(e, n, {
+                        value: o,
+                        writable: !0,
+                        enumerable: !1
+                    }), o
+                } catch (i) {}
+                return e[n] = o, o
+            }
+            var r = Object.prototype.hasOwnProperty;
+            n.exports = t
+        }, {}],
+        gos: [function(e, n) {
+            n.exports = e("7eSDFh")
+        }, {}],
+        handle: [function(e, n) {
+            n.exports = e("D5DuLP")
+        }, {}],
+        D5DuLP: [function(e, n) {
+            function t(e, n, t) {
+                return r.listeners(e).length ? r.emit(e, n, t) : (o[e] || (o[e] = []), void o[e].push(n))
+            }
+            var r = e("ee").create(),
+                o = {};
+            n.exports = t, t.ee = r, r.q = o
+        }, {
+            ee: "QJf3ax"
+        }],
+        id: [function(e, n) {
+            n.exports = e("XL7HBI")
+        }, {}],
+        XL7HBI: [function(e, n) {
+            function t(e) {
+                var n = typeof e;
+                return !e || "object" !== n && "function" !== n ? -1 : e === window ? 0 : i(e, o, function() {
+                    return r++
+                })
+            }
+            var r = 1,
+                o = "nr@id",
+                i = e("gos");
+            n.exports = t
+        }, {
+            gos: "7eSDFh"
+        }],
+        G9z0Bl: [function(e, n) {
+            function t() {
+                var e = d.info = NREUM.info,
+                    n = f.getElementsByTagName("script")[0];
+                if (e && e.licenseKey && e.applicationID && n) {
+                    c(p, function(n, t) {
+                        n in e || (e[n] = t)
+                    });
+                    var t = "https" === s.split(":")[0] || e.sslForHttp;
+                    d.proto = t ? "https://" : "http://", a("mark", ["onload", i()]);
+                    var r = f.createElement("script");
+                    r.src = d.proto + e.agent, n.parentNode.insertBefore(r, n)
+                }
+            }
+
+            function r() {
+                "complete" === f.readyState && o()
+            }
+
+            function o() {
+                a("mark", ["domContent", i()])
+            }
+
+            function i() {
+                return (new Date).getTime()
+            }
+            var a = e("handle"),
+                c = e(1),
+                u = (e(2), window),
+                f = u.document,
+                s = ("" + location).split("?")[0],
+                p = {
+                    beacon: "bam.nr-data.net",
+                    errorBeacon: "bam.nr-data.net",
+                    agent: "js-agent.newrelic.com/nr-632.min.js"
+                },
+                d = n.exports = {
+                    offset: i(),
+                    origin: s,
+                    features: {}
+                };
+            f.addEventListener ? (f.addEventListener("DOMContentLoaded", o, !1), u.addEventListener("load", t, !1)) : (f.attachEvent("onreadystatechange", r), u.attachEvent("onload", t)), a("mark", ["firstbyte", i()])
+        }, {
+            1: 12,
+            2: 3,
+            handle: "D5DuLP"
+        }],
+        loader: [function(e, n) {
+            n.exports = e("G9z0Bl")
+        }, {}],
+        12: [function(e, n) {
+            function t(e, n) {
+                var t = [],
+                    o = "",
+                    i = 0;
+                for (o in e) r.call(e, o) && (t[i] = n(o, e[o]), i += 1);
+                return t
+            }
+            var r = Object.prototype.hasOwnProperty;
+            n.exports = t
+        }, {}],
+        13: [function(e, n) {
+            function t(e, n, t) {
+                n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0);
+                for (var r = -1, o = t - n || 0, i = Array(0 > o ? 0 : o); ++r < o;) i[r] = e[n + r];
+                return i
+            }
+            n.exports = t
+        }, {}]
+    }, {}, ["G9z0Bl"]);
+    </script>
     <!-- force IE browsers in compatibility mode to use their most aggressive rendering engine -->
-
     <meta charset="utf-8">
-    <title>Kickstarter Status</title>
+    <title>{{ username }}'s' Status</title>
     <meta name="description" content="Welcome to Kickstarter&#39;s home for real-time and historical data on system performance.">
-
     <!-- Mobile viewport optimization h5bp.com/ad -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-
     <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
     <meta http-equiv="cleartype" content="on">
-
     <!-- Le fonts -->
-<style>
-  @font-face {
-    font-family: 'proxima-nova';
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=status.kickstarter.com');
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.woff?host=status.kickstarter.com') format('woff'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.ttf?host=status.kickstarter.com') format('truetype');
-    font-weight:300;
-    font-style:normal;
-  }
+    <style>
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
 
-  @font-face {
-    font-family: 'proxima-nova';
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=status.kickstarter.com');
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.woff?host=status.kickstarter.com') format('woff'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.ttf?host=status.kickstarter.com') format('truetype');
-    font-weight:400;
-    font-style:normal;
-  }
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
 
-  @font-face {
-    font-family: 'proxima-nova';
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=status.kickstarter.com');
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.woff?host=status.kickstarter.com') format('woff'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.ttf?host=status.kickstarter.com') format('truetype');
-    font-weight:400;
-    font-style:italic;
-  }
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
 
-  @font-face {
-    font-family: 'proxima-nova';
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=status.kickstarter.com');
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.woff?host=status.kickstarter.com') format('woff'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.ttf?host=status.kickstarter.com') format('truetype');
-    font-weight:500;
-    font-style:normal;
-  }
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
 
-  @font-face {
-    font-family: 'proxima-nova';
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=status.kickstarter.com');
-    src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.woff?host=status.kickstarter.com') format('woff'),
-         url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.ttf?host=status.kickstarter.com') format('truetype');
-    font-weight:700;
-    font-style:normal;
-  }
-</style>
-
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+    </style>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png" />
     <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png" />
-
     <link rel="shortcut icon" href='//dka575ofm4ao0.cloudfront.net/pages-favicon_logos/original/666/open-uri20131001-23325-1mbmbsl'>
-
     <link rel="alternate" type="application/atom+xml" href="http://status.kickstarter.com/history.atom" title="Kickstarter Status History - Atom Feed">
     <link rel="alternate" type="application/rss+xml" href="http://status.kickstarter.com/history.rss" title="Kickstarter Status History - RSS Feed">
-
-
     <link href="http://status.kickstarter.com/history.atom" rel="alternate" title="ATOM" type="application/atom+xml" />
-
     <meta content="authenticity_token" name="csrf-param" />
-<meta content="ljufxCfrWUUT3x1J5ZcOKmwcfTaUKpVXXdyn/jRw0bs=" name="csrf-token" />
-
+    <meta content="ljufxCfrWUUT3x1J5ZcOKmwcfTaUKpVXXdyn/jRw0bs=" name="csrf-token" />
     <!-- Le styles -->
     <link href="//dka575ofm4ao0.cloudfront.net/assets/status_manifest-c033e17c364d7993caa8c78eb0b7f6b1.css" media="all" rel="stylesheet" />
-
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <style>
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
 
+    body,
+    .layout-content.status.status-api .section .example-container .example-opener .color-secondary,
+    .grouped-items-selector {
+        background-color: #ffffff;
+    }
+    /* PRIMARY FONT COLOR */
+    /* PRIMARY FONT COLOR */
+    /* PRIMARY FONT COLOR */
+    /* PRIMARY FONT COLOR */
 
+    body.status,
+    .color-primary,
+    .color-primary:hover,
+    .layout-content.status-index .status-day .update-title.impact-none a,
+    .layout-content.status-index .status-day .update-title.impact-none a:hover,
+    .layout-content.status-index .timeframes-container .timeframe.active,
+    .layout-content.status-full-history .month .incident-container .impact-none,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-none a {
+        color: #0F2105;
+    }
 
+    .layout-content.status.status-index .components-statuses .component-container .name {
+        color: #0F2105;
+        color: rgba(15, 33, 5, .8);
+    }
+    /* SECONDARY FONT COLOR */
+    /* SECONDARY FONT COLOR */
+    /* SECONDARY FONT COLOR */
+    /* SECONDARY FONT COLOR */
 
-  /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */ /* BODY BACKGROUND */
-  body,
-  .layout-content.status.status-api .section .example-container .example-opener .color-secondary,
-  .grouped-items-selector {
-    background-color:#ffffff;
-  }
+    small,
+    .layout-content.status .table-row .date,
+    .color-secondary {
+        color: #AAAAAA;
+    }
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
 
+    .border-color,
+    hr,
+    .tooltip-base {
+        border-color: #eef2ea;
+    }
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
 
+    .layout-content.status.status-index .status-day .update-title.impact-critical a,
+    .layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
+    .layout-content.status.status-index .page-status.status-critical,
+    .layout-content.status.status-index .unresolved-incident.impact-critical .incident-title,
+    .flat-button.background-red {
+        background-color: #fd003b;
+    }
 
+    .layout-content.status-index .components-statuses .component-container.status-red:after,
+    .layout-content.status-full-history .month .incident-container .impact-critical,
+    .layout-content.status-incident .incident-name.impact-critical,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-critical a,
+    .status-red .icon-indicator,
+    .components-container .component-inner-container.status-red .component-status,
+    .components-container .component-inner-container.status-red .icon-indicator {
+        color: #fd003b;
+    }
 
+    .layout-content.status.status-index .unresolved-incident.impact-critical .updates {
+        border-color: #fd003b;
+    }
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
 
-  /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */ /* PRIMARY FONT COLOR */
-  body.status,
-  .color-primary,
-  .color-primary:hover,
-  .layout-content.status-index .status-day .update-title.impact-none a,
-  .layout-content.status-index .status-day .update-title.impact-none a:hover,
-  .layout-content.status-index .timeframes-container .timeframe.active,
-  .layout-content.status-full-history .month .incident-container .impact-none,
-  .layout-content.status.status-index .incidents-list .incident-title.impact-none a {
-    color: #0F2105;
-  }
+    .layout-content.status.status-index .status-day .update-title.impact-major a,
+    .layout-content.status.status-index .status-day .update-title.impact-major a:hover,
+    .layout-content.status.status-index .page-status.status-major,
+    .layout-content.status.status-index .unresolved-incident.impact-major .incident-title {
+        background-color: #e58915;
+    }
 
-  .layout-content.status.status-index .components-statuses .component-container .name {
-    color:#0F2105;
-    color:rgba(15,33,5,.8);
-  }
+    .layout-content.status-index .components-statuses .component-container.status-orange:after,
+    .layout-content.status-full-history .month .incident-container .impact-major,
+    .layout-content.status-incident .incident-name.impact-major,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-major a,
+    .status-orange .icon-indicator,
+    .components-container .component-inner-container.status-orange .component-status,
+    .components-container .component-inner-container.status-orange .icon-indicator {
+        color: #e58915;
+    }
 
+    .layout-content.status.status-index .unresolved-incident.impact-major .updates {
+        border-color: #e58915;
+    }
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
 
+    .layout-content.status.status-index .status-day .update-title.impact-minor a,
+    .layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
+    .layout-content.status.status-index .page-status.status-minor,
+    .layout-content.status.status-index .unresolved-incident.impact-minor .incident-title,
+    .layout-content.status.status-index .scheduled-incidents-container .tab {
+        background-color: #e8d762;
+    }
 
+    .layout-content.status-index .components-statuses .component-container.status-yellow:after,
+    .layout-content.status-full-history .month .incident-container .impact-minor,
+    .layout-content.status-incident .incident-name.impact-minor,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-minor a,
+    .status-yellow .icon-indicator,
+    .components-container .component-inner-container.status-yellow .component-status,
+    .components-container .component-inner-container.status-yellow .icon-indicator {
+        color: #e8d762;
+    }
 
+    .layout-content.status.status-index .unresolved-incident.impact-minor .updates,
+    .layout-content.status.status-index .scheduled-incidents-container {
+        border-color: #e8d762;
+    }
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
 
+    .layout-content.status.status-index .page-status.status-none {
+        background-color: #2BDE73;
+    }
 
-  /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */ /* SECONDARY FONT COLOR */
-  small,
-  .layout-content.status .table-row .date,
-  .color-secondary {
-    color: #AAAAAA;
-  }
+    .layout-content.status-index .components-statuses .component-container.status-green:after,
+    .status-green .icon-indicator,
+    .components-container .component-inner-container.status-green .component-status,
+    .components-container .component-inner-container.status-green .icon-indicator {
+        color: #2BDE73;
+    }
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
 
+    a,
+    a:hover,
+    .layout-content.status-index .page-footer span a:hover,
+    .layout-content.status-index .timeframes-container .timeframe:not(.active):hover,
+    .layout-content.status-incident .subheader a:hover {
+        color: #00a0ff;
+    }
 
-
-
-
-
-
-
-
-  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */  /* BORDER COLOR */
-  .border-color, hr, .tooltip-base {
-    border-color: #eef2ea;
-  }
-
-
-
-
-
-
-  /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */ /* CSS REDS */
-  .layout-content.status.status-index .status-day .update-title.impact-critical a,
-  .layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
-  .layout-content.status.status-index .page-status.status-critical,
-  .layout-content.status.status-index .unresolved-incident.impact-critical .incident-title,
-  .flat-button.background-red {
-    background-color: #fd003b;
-  }
-  .layout-content.status-index .components-statuses .component-container.status-red:after,
-  .layout-content.status-full-history .month .incident-container .impact-critical,
-  .layout-content.status-incident .incident-name.impact-critical,
-  .layout-content.status.status-index .incidents-list .incident-title.impact-critical a,
-  .status-red .icon-indicator,
-  .components-container .component-inner-container.status-red .component-status,
-  .components-container .component-inner-container.status-red .icon-indicator {
-    color: #fd003b;
-  }
-
-  .layout-content.status.status-index .unresolved-incident.impact-critical .updates {
-    border-color:#fd003b;
-  }
-
-
-
-
-
-
-  /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */ /* CSS ORANGES */
-  .layout-content.status.status-index .status-day .update-title.impact-major a,
-  .layout-content.status.status-index .status-day .update-title.impact-major a:hover,
-  .layout-content.status.status-index .page-status.status-major,
-  .layout-content.status.status-index .unresolved-incident.impact-major .incident-title {
-    background-color: #e58915;
-  }
-  .layout-content.status-index .components-statuses .component-container.status-orange:after,
-  .layout-content.status-full-history .month .incident-container .impact-major,
-  .layout-content.status-incident .incident-name.impact-major,
-  .layout-content.status.status-index .incidents-list .incident-title.impact-major a,
-  .status-orange .icon-indicator,
-  .components-container .component-inner-container.status-orange .component-status,
-  .components-container .component-inner-container.status-orange .icon-indicator {
-    color: #e58915;
-  }
-
-  .layout-content.status.status-index .unresolved-incident.impact-major .updates {
-    border-color: #e58915;
-  }
-
-
-
-
-
-
-
-/* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */ /* CSS YELLOWS */
-  .layout-content.status.status-index .status-day .update-title.impact-minor a,
-  .layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
-  .layout-content.status.status-index .page-status.status-minor,
-  .layout-content.status.status-index .unresolved-incident.impact-minor .incident-title,
-  .layout-content.status.status-index .scheduled-incidents-container .tab {
-    background-color: #e8d762;
-  }
-  .layout-content.status-index .components-statuses .component-container.status-yellow:after,
-  .layout-content.status-full-history .month .incident-container .impact-minor,
-  .layout-content.status-incident .incident-name.impact-minor,
-  .layout-content.status.status-index .incidents-list .incident-title.impact-minor a,
-  .status-yellow .icon-indicator,
-  .components-container .component-inner-container.status-yellow .component-status,
-  .components-container .component-inner-container.status-yellow .icon-indicator {
-    color: #e8d762;
-  }
-
-  .layout-content.status.status-index .unresolved-incident.impact-minor .updates,
-  .layout-content.status.status-index .scheduled-incidents-container {
-    border-color:#e8d762;
-  }
-
-
-
-
-
-
-  /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */ /* CSS GREENS */
-  .layout-content.status.status-index .page-status.status-none {
-    background-color: #2BDE73;
-  }
-  .layout-content.status-index .components-statuses .component-container.status-green:after,
-  .status-green .icon-indicator,
-  .components-container .component-inner-container.status-green .component-status,
-  .components-container .component-inner-container.status-green .icon-indicator {
-    color: #2BDE73;
-  }
-
-
-
-
-  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */  /* CSS LINK COLOR */
-  a,
-  a:hover,
-  .layout-content.status-index .page-footer span a:hover,
-  .layout-content.status-index .timeframes-container .timeframe:not(.active):hover,
-  .layout-content.status-incident .subheader a:hover {
-    color: #00a0ff;
-  }
-  .flat-button, .masthead .updates-dropdown-container .show-updates-dropdown {
-    background-color:#00a0ff;
-  }
-
-
-</style>
-
+    .flat-button,
+    .masthead .updates-dropdown-container .show-updates-dropdown {
+        background-color: #00a0ff;
+    }
+    </style>
     <!-- custom css -->
-        <link rel="stylesheet" type="text/css" href="//dka575ofm4ao0.cloudfront.net/page_display_customizations-custom_css_externals/2190/external20131109-31979-14msdkf.css">
-
-
+    <link rel="stylesheet" type="text/css" href="//dka575ofm4ao0.cloudfront.net/page_display_customizations-custom_css_externals/2190/external20131109-31979-14msdkf.css">
     <!-- Le HTML5 shim -->
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <!-- injection for static -->
+</head>
 
-
-  </head>
-
-  <body class="status index ">
-
-
-
-  <div class="status-page-tour-info" data-js-hook="status-page-tour-info" style="display:none">
-  <div class="container inner">
-    Welcome to the demo status page. <a href="#" data-js-hook="restart-tour">Take the tour</a>.
-  </div>
-</div>
-
-  <div class="layout-content status status-index starter">
-      <div class="masthead-container basic">
-
-    <div class="masthead has-logo">
-        <div class="logo-container">
-            <a href="http://www.kickstarter.com/"><img alt="Open uri20140512 26236 1ceo5t1" src="//dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/666/open-uri20140512-26236-1ceo5t1" style="" /></a>
-        </div>
-
-
-
-<div class="updates-dropdown-container" data-js-hook="updates-dropdown-container">
-  <a href="#" data-js-hook="show-updates-dropdown" id="show-updates-dropdown" class="show-updates-dropdown">
-
-  </a>
-  <div class="updates-dropdown" data-js-hook="updates-dropdown" style="display:none">
-    <div class="updates-dropdown-nav nav-items-5">
-        <a href="#updates-dropdown-email" id="updates-dropdown-email-btn">
-          <span class="icon-container email">
-        </a>
-        <a href="#updates-dropdown-twitter" id="updates-dropdown-twitter-btn">
-          <span class="icon-container twitter">
-        </a>
-        <a href="#updates-dropdown-support" id="updates-dropdown-support-btn">
-          <span class="icon-container support">
-        </a>
-      <a href="#updates-dropdown-atom" id="updates-dropdown-atom-btn">
-        <span class="icon-container rss">
-      </a>
-      <a href="#" data-js-hook="updates-dropdown-close" id="updates-dropdown-close-btn">
-        x
-      </a>
-    </div>
-    <div class="updates-dropdown-sections-container">
-
-        <div class="updates-dropdown-section email" id="updates-dropdown-email" style="display:none">
-          <div class="directions">
-            Get email notifications whenever Kickstarter creates or updates an incident.
-          </div>
-          <form accept-charset="UTF-8" action="/subscribe.json" data-remote="true" id="subscribe-form-email" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
-              <!-- make sure not to put cookie values in here since this gets cached -->
-              <input name="email" id="email" type="text" placeholder="Email Address" class="full-width" data-js-hook="email-notification-field">
-              <input type="submit" value="Subscribe via Email" class="flat-button full-width" id="subscribe-btn-email" data-disabled-text="Subscribing..." data-revert-on-success="true">
-</form>        </div>
-
-
-
-        <div class="updates-dropdown-section twitter" id="updates-dropdown-twitter" style="display:none">
-          <a href="https://twitter.com/ksrstatus" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true" data-width="59px">Follow @ksrstatus</a>
-          or&nbsp;
-          <a href="http://www.twitter.com/ksrstatus" target="_blank">view our profile</a>.
-          <style>
-            .twitter-follow-button {
-              margin-bottom: -6px;
-            }
-          </style>
-
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
-
-        <div class="updates-dropdown-section support" id="updates-dropdown-support" style="display:none">
-          Visit our <a href="http://www.kickstarter.com/help" target="_blank">support site</a>.
-        </div>
-
-      <div class="updates-dropdown-section atom" id="updates-dropdown-atom">
-          Get the <a href="http://status.kickstarter.com/history.atom" target="_blank">Atom Feed</a> or <a href="http://status.kickstarter.com/history.rss" target="_blank">RSS Feed</a>.
-      </div>
-
-    </div>
-  </div>
-</div>
-      <div class="clearfix"></div>
+<body class="status index ">
+    <div class="layout-content status status-index starter">
+        <div class="masthead-container basic">
+            <div class="masthead has-logo">
+                <div class="logo-container">
+                    <a href="http://www.kickstarter.com/"><img alt="Open uri20140512 26236 1ceo5t1" src="//dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/666/open-uri20140512-26236-1ceo5t1" style="" /></a>
+                </div>
+<!--                 <div class="updates-dropdown-container" data-js-hook="updates-dropdown-container">
+                    <a href="#" data-js-hook="show-updates-dropdown" id="show-updates-dropdown" class="show-updates-dropdown">
+                    </a>
+</div> -->
     </div>
 
 </div> <!-- this is outside of the .container so that the cover photo can go full width on mobile -->
@@ -373,568 +489,58 @@
           <span class="status font-large">
             All Systems Operational
           </span>
-          <span class="last-updated-stamp  font-small"></span>
-        </div>
-
-
-
-        <div class="components-section font-regular">
-    <div class="components-container one-column">
-          <div class="component-container border-color">
-            <div class="component-inner-container status-green " data-js-hook="">
-
-
-    <span class="name">
-      Kickstarter.com
-        <span class="tooltip-base" data-js-hook="tooltip" data-original-title="Main site">?</span>
-    </span>
-
-    <span class="component-status">
+                                <span class="last-updated-stamp  font-small"></span>
+                        </div>
+                        <div class="components-section font-regular">
+                            <div class="components-container one-column">
+                                <div class="component-container border-color">
+                                    <div class="component-inner-container status-green " data-js-hook="">
+                                        <span class="name">
+      Battery %
+                                        </span>
+                                        <span class="component-status">
       Operational
     </span>
-
-    <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
-</div>
-          </div>
-          <div class="component-container border-color">
-            <div class="component-inner-container status-green " data-js-hook="">
-
-
-    <span class="name">
-      Payments
-        <span class="tooltip-base" data-js-hook="tooltip" data-original-title="Pledging and pledge collection">?</span>
+                                        <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
+                                    </div>
+                                </div>
+                                <div class="component-container border-color">
+                                    <div class="component-inner-container status-green " data-js-hook="">
+                                        <span class="name">
+      Latest Status Update
+                                        </span>
+                                        <span class="component-status">
+      Ayy lmao
     </span>
+                                        <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="component-statuses-legend font-small">
+                                <div class="legend-item status-green">
+                                    <span class="icon-indicator fa fa-check"></span> Operational
+                                </div>
+                                <div class="legend-item status-yellow">
+                                    <span class="icon-indicator fa fa-minus-square"></span> Degraded Performance
+                                </div>
+                                <div class="legend-item status-orange">
+                                    <span class="icon-indicator fa fa-exclamation-triangle"></span> Partial Outage
+                                </div>
+                                <div class="legend-item status-red">
+                                    <span class="icon-indicator fa fa-times"></span> Major Outage
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-footer border-color font-small">
+                            <span class="color-secondary powered-by">Powered by <a href="http://www.phonestatuspage.io" target="_blank" class="color-secondary">PhoneStatusPage.io</a></span>
+                        </div>
+                    </div>
+
+                    <script>
+                    $(function() {
+                        $('.powered-by').show().css('display', 'inline-block !important');
+                    });
+                    </script>
+</body>
 
-    <span class="component-status">
-      Operational
-    </span>
-
-    <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
-</div>
-          </div>
-          <div class="component-container border-color">
-            <div class="component-inner-container status-green " data-js-hook="">
-
-
-    <span class="name">
-      Mobile
-        <span class="tooltip-base" data-js-hook="tooltip" data-original-title="Mobile pages and iPhone app">?</span>
-    </span>
-
-    <span class="component-status">
-      Operational
-    </span>
-
-    <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
-</div>
-          </div>
-    </div>
-    <div class="component-statuses-legend font-small">
-      <div class="legend-item status-green">
-        <span class="icon-indicator fa fa-check"></span>
-        Operational
-      </div>
-      <div class="legend-item status-yellow">
-        <span class="icon-indicator fa fa-minus-square"></span>
-        Degraded Performance
-      </div>
-      <div class="legend-item status-orange">
-        <span class="icon-indicator fa fa-exclamation-triangle"></span>
-        Partial Outage
-      </div>
-      <div class="legend-item status-red">
-        <span class="icon-indicator fa fa-times"></span>
-        Major Outage
-      </div>
-    </div>
-  </div>
-
-
-
-
-      <div class="page-footer border-color font-small">
-        <span class="color-secondary powered-by">Powered by <a href="http://www.phonestatuspage.io" target="_blank" class="color-secondary">PhoneStatusPage.io</a></span>
-      </div>
-
-
-
-  </div>
-
-<!-- register the global modal if necessary -->
-
-<!-- register the incident modals, has to be done here since content_for isn't evaluated in cache context -->
-
-
-<!-- custom metrics stuff -->
-
-
-
-
-
-
-    <script src="//dka575ofm4ao0.cloudfront.net/assets/status_manifest-7cc2363cb5d684694cc70b0256c37d05.js"></script>
-
-
-
-
-
-    <!-- all of the content_for stuff -->
-        <script type="text/javascript">
-      $(function() {
-        SP.currentPage.registerSubscriptionForm('email');
-
-
-
-          //weird bug here with capybara not playing nice with the mask lib
-          $('[data-js-hook="phone-number"]').mask('999 999 9999');
-      })
-    </script>
-    <script type="text/javascript">
-      $(function() {
-      })
-    </script>
-  <script src="//dka575ofm4ao0.cloudfront.net/assets/status_common-37d950f58b94ceb9dbe88a2bbfb57013.js"></script>
-  <script src="//dka575ofm4ao0.cloudfront.net/assets/register_subscription_form-c864ec77500521a0e0601387e5988d2e.js"></script>
-
-    <script src="//dka575ofm4ao0.cloudfront.net/assets/status_idle-7396786bc714c9c92ffcea8becd0940e.js"></script>
-
-  <script>
-
-    $(function() {
-
-      // clicks on first tab in subscribe popout since we won't know which is first
-      // upon construction in the ruby code
-      $('.updates-dropdown-nav > a').eq(0).click();
-
-      // twitter follow button needs some margin
-      $('.twitter-follow-button').css('margin-right', '6px');
-    });
-
-
-    $(function() {
-      // open/close component groups
-      HRB.utils.djshook('component-group-opener').on('click', function() {
-        $(this).find('.group-parent-indicator').toggleClass('fa-plus-square-o').toggleClass('fa-minus-square-o').end().parent().toggleClass('open');
-      });
-    });
-
-
-
-
-  </script>
-  <script src="//dka575ofm4ao0.cloudfront.net/assets/highstock.min-b9ba9c464e6eccd591f88678082da2cc.js"></script>
-
-  <script>
-    String.prototype.commafy = function () {
-      return this.replace(/(^|[^\w.])(\d{4,})/g, function($0, $1, $2) {
-        return $1 + $2.replace(/\d(?=(?:\d\d\d)+(?!\d))/g, "$&,");
-      });
-    }
-
-    Number.prototype.commafy = function () {
-      return String(this).commafy();
-    }
-
-    $(function() {
-      SP.currentPage.numberToDecimalPlaces = function(num, dec) {
-        if (dec == 0) {
-          return Math.round(num).commafy();
-        }
-
-        newnum = num.toFixed(dec)
-        var finalValue;
-
-        // this gets rid of the 100.000% thing
-        if (num == parseInt(newnum))
-          finalValue = Math.round(num);
-        else
-          finalValue = newnum;
-
-        return finalValue.commafy();
-      }
-
-      SP.currentPage.getDataForTimePeriod = function(period) {
-          $.ajax({
-            type: "GET",
-            // this line must be end up with "//status.*" type of URLs (no protocol, just leading slashes). customers use SSL through us or by offloading with
-            // cloudflare or something like it and the request.protocol the server sees is different than what the browser sees
-            url: "//status.kickstarter.com/metrics-display/vcdb884my4c7/_.json".replace('_', period)
-          }).success(function(metricsDisplay, textStatus, xhr) {
-            var summary = metricsDisplay.summary
-              , $metricSummaryLabel = HRB.utils.djshook('metrics-display-current-vcdb884my4c7');
-
-            if(summary) {
-              // we need to do a basic check to make sure we have any data at all
-              var hasDataRollupsAvailable = false;
-              for(var h = 0; h < metricsDisplay.metrics.length; h++) {
-                if(metricsDisplay.metrics[h].data.length > 0) {
-                  hasDataRollupsAvailable = true;
-                  break;
-                }
-              }
-
-              // weird case where librato doesn't have anything indexed yet
-              // this is mostly the case when we have a self-metric with fresh data
-              if(!hasDataRollupsAvailable) {
-                $metricSummaryLabel.html("<small>Oops! No data has been indexed for this time period yet.</small>");
-                $metricSummaryLabel.parent().next().hide();
-                return;
-              } else {
-                $metricSummaryLabel.parent().next().show();
-              }
-
-              // proceed since we have data
-              $metricSummaryLabel.text(SP.currentPage.numberToDecimalPlaces(summary['mean'], 0 ) + ' ms');
-
-              var metricDataPoints = {}
-                , intervalMsec = metricsDisplay.period.interval * 1000;
-
-              var startingBucketMsec = parseInt((new Date()).getTime() / intervalMsec) * intervalMsec;
-
-              for(var h = 0; h < metricsDisplay.metrics.length; h++) {
-                metricDataPoints[metricsDisplay.metrics[h].metric.id] = []
-                var data = metricsDisplay.metrics[h].data
-                  , currentBucketMsec = startingBucketMsec;
-
-                for(var i = metricsDisplay.period.count; i > 0; i--) {
-                  // loop over the data and pull out the data point with the following characteristics
-                  //  -> closest to currentBucketMsec
-                  //  -> without being greater than currentMsecBucket
-                  //  -> without being more than 1 intervalMsec bucket away
-                  var valueToUse = null;
-                  for(var j = data.length - 1; j >= 0; j--) {
-                    var currentTimestampMsec = data[j].timestamp * 1000;
-                    if(currentTimestampMsec <= currentBucketMsec && currentTimestampMsec > (currentBucketMsec - intervalMsec)) {
-                      valueToUse = data[j].value;
-                      // console.log("Using ts:" + currentTimestampMsec + " with value:" + valueToUse + " for bucket:" + currentBucketMsec);
-                      break;
-                    }
-                  }
-
-                  // local time
-                  var offset = -1 * (new Date()).getTimezoneOffset() * 60 * 1000;
-
-                  metricDataPoints[metricsDisplay.metrics[h].metric.id].push([currentBucketMsec + offset, valueToUse])
-                  currentBucketMsec -= intervalMsec;
-                }
-
-                metricDataPoints[metricsDisplay.metrics[h].metric.id].reverse();
-              }
-
-                    $('#metrics-display-graph-container-vcdb884my4c7').highcharts('StockChart', {
-        plotOptions : {
-          series : {
-            animation : false,
-            color : '#00a0ff'
-          },
-        },
-
-        chart : {
-          backgroundColor: '#ffffff'
-        },
-
-        title : {
-          text: '',
-          style: {
-                display: 'none',
-             }
-        },
-
-        credits : {
-          enabled : false
-        },
-
-        exporting : {
-          enabled : false
-        },
-
-        rangeSelector : {
-          enabled : false
-        },
-
-        scrollbar : {
-          enabled : false
-        },
-
-        navigator : {
-          enabled : false
-        },
-
-        xAxis: {
-          gridLineColor : '#rgba(238,242,234,.8)',
-          labels: {
-            style : {
-              color: '#AAAAAA'
-            }
-          },
-          lineColor: '#eef2ea',
-
-        },
-
-        yAxis: {
-          gridLineColor : 'rgba(238,242,234,.5)',
-          labels: {
-            style : {
-              color: '#AAAAAA'
-            },
-            enabled : true
-          },
-          showLastLabel: true,
-                         tickPixelInterval: 40,
-               min: 0.0,
-               startOnTick: false,
-
-        },
-
-        series : [
-              {
-      name : 'Response time',
-      data : metricDataPoints['vcdb884my4c7'],
-      tooltip: {
-        valueSuffix: ' ms'
-      },
-      enableMouseTracking : ($(window).outerWidth() > 480) && false
-    }
-
-        ],
-
-        tooltip: {
-          enabled: ($(window).outerWidth() > 480) && false,
-          valueDecimals: function(value) {
-            var v = SP.currentPage.numberToDecimalPlaces(value, 0);
-            if(v.indexOf('.') == -1)
-              return 0;
-            else
-              return 0;
-          },
-        }
-      });
-
-            } else {
-              $metricSummaryLabel.text("Failed to load.");
-            }
-          });
-          $.ajax({
-            type: "GET",
-            // this line must be end up with "//status.*" type of URLs (no protocol, just leading slashes). customers use SSL through us or by offloading with
-            // cloudflare or something like it and the request.protocol the server sees is different than what the browser sees
-            url: "//status.kickstarter.com/metrics-display/1jfqcxvt86zs/_.json".replace('_', period)
-          }).success(function(metricsDisplay, textStatus, xhr) {
-            var summary = metricsDisplay.summary
-              , $metricSummaryLabel = HRB.utils.djshook('metrics-display-current-1jfqcxvt86zs');
-
-            if(summary) {
-              // we need to do a basic check to make sure we have any data at all
-              var hasDataRollupsAvailable = false;
-              for(var h = 0; h < metricsDisplay.metrics.length; h++) {
-                if(metricsDisplay.metrics[h].data.length > 0) {
-                  hasDataRollupsAvailable = true;
-                  break;
-                }
-              }
-
-              // weird case where librato doesn't have anything indexed yet
-              // this is mostly the case when we have a self-metric with fresh data
-              if(!hasDataRollupsAvailable) {
-                $metricSummaryLabel.html("<small>Oops! No data has been indexed for this time period yet.</small>");
-                $metricSummaryLabel.parent().next().hide();
-                return;
-              } else {
-                $metricSummaryLabel.parent().next().show();
-              }
-
-              // proceed since we have data
-              $metricSummaryLabel.text(SP.currentPage.numberToDecimalPlaces(summary['mean'], 3 ) + '%');
-
-              var metricDataPoints = {}
-                , intervalMsec = metricsDisplay.period.interval * 1000;
-
-              var startingBucketMsec = parseInt((new Date()).getTime() / intervalMsec) * intervalMsec;
-
-              for(var h = 0; h < metricsDisplay.metrics.length; h++) {
-                metricDataPoints[metricsDisplay.metrics[h].metric.id] = []
-                var data = metricsDisplay.metrics[h].data
-                  , currentBucketMsec = startingBucketMsec;
-
-                for(var i = metricsDisplay.period.count; i > 0; i--) {
-                  // loop over the data and pull out the data point with the following characteristics
-                  //  -> closest to currentBucketMsec
-                  //  -> without being greater than currentMsecBucket
-                  //  -> without being more than 1 intervalMsec bucket away
-                  var valueToUse = null;
-                  for(var j = data.length - 1; j >= 0; j--) {
-                    var currentTimestampMsec = data[j].timestamp * 1000;
-                    if(currentTimestampMsec <= currentBucketMsec && currentTimestampMsec > (currentBucketMsec - intervalMsec)) {
-                      valueToUse = data[j].value;
-                      // console.log("Using ts:" + currentTimestampMsec + " with value:" + valueToUse + " for bucket:" + currentBucketMsec);
-                      break;
-                    }
-                  }
-
-                  // local time
-                  var offset = -1 * (new Date()).getTimezoneOffset() * 60 * 1000;
-
-                  metricDataPoints[metricsDisplay.metrics[h].metric.id].push([currentBucketMsec + offset, valueToUse])
-                  currentBucketMsec -= intervalMsec;
-                }
-
-                metricDataPoints[metricsDisplay.metrics[h].metric.id].reverse();
-              }
-
-                    $('#metrics-display-graph-container-1jfqcxvt86zs').highcharts('StockChart', {
-        plotOptions : {
-          series : {
-            animation : false,
-            color : '#00a0ff'
-          },
-        },
-
-        chart : {
-          backgroundColor: '#ffffff'
-        },
-
-        title : {
-          text: '',
-          style: {
-                display: 'none',
-             }
-        },
-
-        credits : {
-          enabled : false
-        },
-
-        exporting : {
-          enabled : false
-        },
-
-        rangeSelector : {
-          enabled : false
-        },
-
-        scrollbar : {
-          enabled : false
-        },
-
-        navigator : {
-          enabled : false
-        },
-
-        xAxis: {
-          gridLineColor : '#rgba(238,242,234,.8)',
-          labels: {
-            style : {
-              color: '#AAAAAA'
-            }
-          },
-          lineColor: '#eef2ea',
-
-        },
-
-        yAxis: {
-          gridLineColor : 'rgba(238,242,234,.5)',
-          labels: {
-            style : {
-              color: '#AAAAAA'
-            },
-            enabled : true
-          },
-          showLastLabel: true,
-                        tickPositions: [0.0, 50.0, 100.0],
-               min: 0.0,
-               startOnTick: false,
-               max: 100.0,
-               endOnTick: false,
-
-        },
-
-        series : [
-              {
-      name : 'Kickstarter.com uptime',
-      data : metricDataPoints['ng4pc9844wtg'],
-      tooltip: {
-        valueSuffix: '%'
-      },
-      enableMouseTracking : ($(window).outerWidth() > 480) && true
-    }
-
-        ],
-
-        tooltip: {
-          enabled: ($(window).outerWidth() > 480) && true,
-          valueDecimals: function(value) {
-            var v = SP.currentPage.numberToDecimalPlaces(value, 3);
-            if(v.indexOf('.') == -1)
-              return 0;
-            else
-              return 3;
-          },
-        }
-      });
-
-            } else {
-              $metricSummaryLabel.text("Failed to load.");
-            }
-          });
-      }
-
-      var $timePeriodToggles = HRB.utils.djshook('data-time-period-toggle');
-
-      SP.currentPage.activeTimePeriodToggle = function(period) {
-        $timePeriodToggles.removeClass('active');
-        $timePeriodToggles.filter('[data-time-period="' + period + '"]').addClass('active');
-      }
-
-      SP.currentPage.getAndDisplayInitialChartData = function() {
-        if (window.location.hash == '#week') {
-          SP.currentPage.getDataForTimePeriod('week');
-          SP.currentPage.activeTimePeriodToggle('week');
-        }
-        else if (window.location.hash == '#month') {
-          SP.currentPage.getDataForTimePeriod('month');
-          SP.currentPage.activeTimePeriodToggle('month');
-        }
-        else {
-          SP.currentPage.getDataForTimePeriod('day');
-          SP.currentPage.activeTimePeriodToggle('day');
-        }
-      }
-
-      $timePeriodToggles.on('click', function() {
-        var newPeriod = $(this).attr('data-time-period');
-
-        SP.currentPage.activeTimePeriodToggle(newPeriod);
-        SP.currentPage.getDataForTimePeriod(newPeriod);
-        window.location.hash = newPeriod;
-
-        return false;
-      });
-
-      SP.currentPage.getAndDisplayInitialChartData();
-    })
-  </script>
-
-
-
-
-
-
-<!-- FOR FLASH NOTICES -->
-
-
-
-<!-- FOR ERROR -->
-
-
-
-    <script>
-  $(function() {
-    $('.powered-by').show().css('display','inline-block !important');
-  });
-</script>
-
-
-
-
-  </body>
 </html>
