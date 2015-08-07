@@ -26,19 +26,23 @@ def update_user_profile():
     # show the user profile for that user
     user = Data.query.filter_by(username=username).first()
 
-    if user:
-        user.battery_percent = battery_percent
-        if status:
-            user.status = status
-        db.session.commit()
-        ret_json["message"] = "Successfully updated"
-        ret_json["code"] = 200
-    else:
-        user = Data(username, battery_percent, status)
-        db.session.add(user)
-        db.session.commit()
-        ret_json["message"] = "Successfully created"
-        ret_json["code"] = 200
+    try:
+        if user:
+            user.battery_percent = battery_percent
+            if status:
+                user.status = status
+            db.session.commit()
+            ret_json["message"] = "Successfully updated"
+            ret_json["code"] = 200
+        else:
+            user = Data(username, battery_percent, status)
+            db.session.add(user)
+            db.session.commit()
+            ret_json["message"] = "Successfully created"
+            ret_json["code"] = 200
+    except:
+        ret_json["message"] = "Error updating user profile"
+        ret_json["code"] = 500
     return jsonify(ret_json)
 
 if __name__ == '__main__':
