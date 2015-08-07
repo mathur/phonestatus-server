@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- force IE browsers in compatibility mode to use their most aggressive rendering engine -->
     <meta charset="utf-8">
-    <title>{{ username }}'s' Status</title>
+    <title>{{ username }}'s' Phone Status</title>
     <meta name="description" content="Welcome to Kickstarter&#39;s home for real-time and historical data on system performance.">
     <!-- Mobile viewport optimization h5bp.com/ad -->
     <meta name="HandheldFriendly" content="True">
@@ -250,7 +250,7 @@
         <div class="masthead-container basic">
             <div class="masthead has-logo">
                 <div class="logo-container">
-                    <a href="http://www.kickstarter.com/"><img alt="Open uri20140512 26236 1ceo5t1" src="//dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/666/open-uri20140512-26236-1ceo5t1" style="" /></a>
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="">
                 </div>
 <!--                 <div class="updates-dropdown-container" data-js-hook="updates-dropdown-container">
                     <a href="#" data-js-hook="show-updates-dropdown" id="show-updates-dropdown" class="show-updates-dropdown">
@@ -265,30 +265,29 @@
     <div class="container">
         <div class="page-status status-none">
           <span class="status font-large">
-            All Systems Operational
+            Detected to be powered on
           </span>
-                                <span class="last-updated-stamp  font-small"></span>
                         </div>
                         <div class="components-section font-regular">
                             <div class="components-container one-column">
                                 <div class="component-container border-color">
                                     <div class="component-inner-container status-green " data-js-hook="">
-                                        <span class="name">
+                                        <span class="name"><b>
       Battery %
-                                        </span>
+                                        </b></span>
                                         <span class="component-status">
-      Operational
+      {{ battery_percent }} %
     </span>
                                         <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
                                     </div>
                                 </div>
                                 <div class="component-container border-color">
-                                    <div class="component-inner-container status-green " data-js-hook="">
-                                        <span class="name">
-      Latest Status Update
-                                        </span>
+                                    <div class="component-inner-container " data-js-hook="">
+                                        <span class="name"><b>
+      Latest Status Update:
+                                        </b></span>
                                         <span class="component-status">
-      Ayy lmao
+      {{ status }}
     </span>
                                         <span class="icon-indicator fa fa-check" data-js-hook="tooltip" data-original-title="Operational"></span>
                                     </div>
