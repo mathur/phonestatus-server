@@ -21,10 +21,7 @@ def update_user_profile():
     battery_percent = request.args.get('battery_percent')
     status = request.args.get('status')
 
-    ret_json = {
-        "message": "",
-        "code": "",
-    }
+    ret_json = {}
 
     # show the user profile for that user
     user = Data.query.filter_by(username=username).first()
