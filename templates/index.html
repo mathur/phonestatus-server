@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- force IE browsers in compatibility mode to use their most aggressive rendering engine -->
+    <meta charset="utf-8">
+    <title>PhoneStatusPage.io</title>
+    <meta name="description" content="Welcome to Kickstarter&#39;s home for real-time and historical data on system performance.">
+    <!-- Mobile viewport optimization h5bp.com/ad -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+    <meta http-equiv="cleartype" content="on">
+    <!-- Le fonts -->
+    <style>
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaLight.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegular.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaRegularIt.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaSemibold.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'proxima-nova';
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=status.kickstarter.com');
+        src: url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.eot?host=status.kickstarter.com#iefix') format('embedded-opentype'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.woff?host=status.kickstarter.com') format('woff'), url('//dka575ofm4ao0.cloudfront.net/assets/ProximaNovaBold.ttf?host=status.kickstarter.com') format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+    </style>
+    <!-- Le styles -->
+    <link href="//dka575ofm4ao0.cloudfront.net/assets/status_manifest-c033e17c364d7993caa8c78eb0b7f6b1.css" media="all" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <style>
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+    /* BODY BACKGROUND */
+
+    body,
+    .layout-content.status.status-api .section .example-container .example-opener .color-secondary,
+    .grouped-items-selector {
+        background-color: #ffffff;
+    }
+    /* PRIMARY FONT COLOR */
+    /* PRIMARY FONT COLOR */
+    /* PRIMARY FONT COLOR */
+    /* PRIMARY FONT COLOR */
+
+    body.status,
+    .color-primary,
+    .color-primary:hover,
+    .layout-content.status-index .status-day .update-title.impact-none a,
+    .layout-content.status-index .status-day .update-title.impact-none a:hover,
+    .layout-content.status-index .timeframes-container .timeframe.active,
+    .layout-content.status-full-history .month .incident-container .impact-none,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-none a {
+        color: #0F2105;
+    }
+
+    .layout-content.status.status-index .components-statuses .component-container .name {
+        color: #0F2105;
+        color: rgba(15, 33, 5, .8);
+    }
+    /* SECONDARY FONT COLOR */
+    /* SECONDARY FONT COLOR */
+    /* SECONDARY FONT COLOR */
+    /* SECONDARY FONT COLOR */
+
+    small,
+    .layout-content.status .table-row .date,
+    .color-secondary {
+        color: #AAAAAA;
+    }
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+    /* BORDER COLOR */
+
+    .border-color,
+    hr,
+    .tooltip-base {
+        border-color: #eef2ea;
+    }
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+    /* CSS REDS */
+
+    .layout-content.status.status-index .status-day .update-title.impact-critical a,
+    .layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
+    .layout-content.status.status-index .page-status.status-critical,
+    .layout-content.status.status-index .unresolved-incident.impact-critical .incident-title,
+    .flat-button.background-red {
+        background-color: #fd003b;
+    }
+
+    .layout-content.status-index .components-statuses .component-container.status-red:after,
+    .layout-content.status-full-history .month .incident-container .impact-critical,
+    .layout-content.status-incident .incident-name.impact-critical,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-critical a,
+    .status-red .icon-indicator,
+    .components-container .component-inner-container.status-red .component-status,
+    .components-container .component-inner-container.status-red .icon-indicator {
+        color: #fd003b;
+    }
+
+    .layout-content.status.status-index .unresolved-incident.impact-critical .updates {
+        border-color: #fd003b;
+    }
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+    /* CSS ORANGES */
+
+    .layout-content.status.status-index .status-day .update-title.impact-major a,
+    .layout-content.status.status-index .status-day .update-title.impact-major a:hover,
+    .layout-content.status.status-index .page-status.status-major,
+    .layout-content.status.status-index .unresolved-incident.impact-major .incident-title {
+        background-color: #e58915;
+    }
+
+    .layout-content.status-index .components-statuses .component-container.status-orange:after,
+    .layout-content.status-full-history .month .incident-container .impact-major,
+    .layout-content.status-incident .incident-name.impact-major,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-major a,
+    .status-orange .icon-indicator,
+    .components-container .component-inner-container.status-orange .component-status,
+    .components-container .component-inner-container.status-orange .icon-indicator {
+        color: #e58915;
+    }
+
+    .layout-content.status.status-index .unresolved-incident.impact-major .updates {
+        border-color: #e58915;
+    }
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+    /* CSS YELLOWS */
+
+    .layout-content.status.status-index .status-day .update-title.impact-minor a,
+    .layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
+    .layout-content.status.status-index .page-status.status-minor,
+    .layout-content.status.status-index .unresolved-incident.impact-minor .incident-title,
+    .layout-content.status.status-index .scheduled-incidents-container .tab {
+        background-color: #e8d762;
+    }
+
+    .layout-content.status-index .components-statuses .component-container.status-yellow:after,
+    .layout-content.status-full-history .month .incident-container .impact-minor,
+    .layout-content.status-incident .incident-name.impact-minor,
+    .layout-content.status.status-index .incidents-list .incident-title.impact-minor a,
+    .status-yellow .icon-indicator,
+    .components-container .component-inner-container.status-yellow .component-status,
+    .components-container .component-inner-container.status-yellow .icon-indicator {
+        color: #e8d762;
+    }
+
+    .layout-content.status.status-index .unresolved-incident.impact-minor .updates,
+    .layout-content.status.status-index .scheduled-incidents-container {
+        border-color: #e8d762;
+    }
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+    /* CSS GREENS */
+
+    .layout-content.status.status-index .page-status.status-none {
+        background-color: #2BDE73;
+    }
+
+    .layout-content.status-index .components-statuses .component-container.status-green:after,
+    .status-green .icon-indicator,
+    .components-container .component-inner-container.status-green .component-status,
+    .components-container .component-inner-container.status-green .icon-indicator {
+        color: #2BDE73;
+    }
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+    /* CSS LINK COLOR */
+
+    a,
+    a:hover,
+    .layout-content.status-index .page-footer span a:hover,
+    .layout-content.status-index .timeframes-container .timeframe:not(.active):hover,
+    .layout-content.status-incident .subheader a:hover {
+        color: #00a0ff;
+    }
+
+    .flat-button,
+    .masthead .updates-dropdown-container .show-updates-dropdown {
+        background-color: #00a0ff;
+    }
+    </style>
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="//dka575ofm4ao0.cloudfront.net/page_display_customizations-custom_css_externals/2190/external20131109-31979-14msdkf.css">
+    <!-- Le HTML5 shim -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- injection for static -->
+</head>
+
+<body class="status index ">
+    <div class="layout-content status status-index starter">
+        <div class="masthead-container basic">
+            <div class="masthead has-logo">
+                <div class="logo-container">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- this is outside of the .container so that the cover photo can go full width on mobile -->
+        <div class="container">
+            <div class="components-section font-regular">
+                <div class="components-container one-column">
+                    <div class="component-container border-color">
+                    </div>
+                </div>
+            </div>
+            <div class="page-footer border-color font-small">
+                <span class="color-secondary powered-by">Powered by <a href="http://www.phonestatuspage.io" target="_blank" class="color-secondary">PhoneStatusPage.io</a></span>
+            </div>
+        </div>
+        <script>
+        $(function() {
+            $('.powered-by').show().css('display', 'inline-block !important');
+        });
+        </script>
+    </div>
+</body>
+
+</html>

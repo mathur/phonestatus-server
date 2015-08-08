@@ -1,0 +1,1 @@
+SECRET_KEY = 'py045kpfem42sdgdsk4324mmknf9sdmmsdv9423'
