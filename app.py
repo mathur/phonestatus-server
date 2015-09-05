@@ -1,3 +1,4 @@
+#!flask/bin/python
 import hashlib
 import time
 
@@ -29,7 +30,7 @@ def update_user_profile():
     battery_percent = request.args.get('battery_percent')
     request_key = request.args.get('key')
     status = request.args.get('status')
-    status_last_updated = time.strftime("%d:%m:%Y:%H:%M:%S")
+    status_last_updated = time.strftime("%Y.%m.%d-%H.%M.%S")
 
     ret_json = {}
 
